@@ -1,0 +1,66 @@
+{
+  "format": 1,
+  "title": {
+    "en": "Example DSH Plugin Market",
+    "zh": "DSH 插件市场示例索引"
+  },
+  "description": {
+    "en": "An example format-1 plugin market index listing bundles from the deepseek-harness repository. Host this file (and its plugins) somewhere public and configure its URL as a market index in DSH.",
+    "zh": "一份格式 1 的插件市场示例索引，列出 deepseek-harness 仓库中的组合包。请把本文件托管到公开地址后，在 DSH 中把它配置为插件市场索引源。"
+  },
+  "metadata": {
+    "categories": {
+      "tools": {
+        "title": { "en": "Tools" }
+      }
+    },
+    "labels": {
+      "official": {
+        "title": { "en": "Official" }
+      }
+    },
+    "sortKeys": {}
+  },
+  "plugins": [
+    {
+      "name": "@deepseek-ai/dsh-experimental-plugin-market-bundle",
+      "title": { "en": "Custom Plugin Markets" },
+      "description": {
+        "en": "Experimental custom plugin markets: a Discover tab that browses and installs bundles from plugin market indexes.",
+        "zh": "实验性自定义插件市场：一个浏览并从插件市场索引中安装组合包的“发现”标签页。"
+      },
+      "author": "DeepSeek",
+      "homepage": "https://github.com/deepseek-ai/deepseek-harness",
+      "repository": {
+        "url": "https://github.com/deepseek-ai/deepseek-harness"
+      },
+      "metadata": {
+        "category": "tools",
+        "keywords": ["plugin-market", "discover", "bundle"],
+        "labels": ["official"]
+      },
+      "versions": [
+        {
+          "version": "0.2.1-rc.3",
+          "publishTimestamp": 1793261595,
+          "engines": { "dsh": ">=0.2.1-rc.0 <0.3.0" },
+          "source": {
+            "type": "git",
+            "url": "https://github.com/deepseek-ai/deepseek-harness",
+            "commit": "ce7073d51254c26cd63b22a60835b8f948deb447",
+            "path": "packages/experimental/plugin-market-bundle"
+          }
+        },
+        {
+          "version": "0.2.0",
+          "publishTimestamp": 1790400000,
+          "engines": { "dsh": ">=0.2.0" },
+          "source": {
+            "type": "npm",
+            "registry": "https://registry.npmjs.org/"
+          }
+        }
+      ]
+    }
+  ]
+}
